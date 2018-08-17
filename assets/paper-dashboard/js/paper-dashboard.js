@@ -66,9 +66,6 @@ pd = {
             sidebar_bg_color = $sidebar.data('background-color');
             sidebar_active_color = $sidebar.data('active-color');
 
-            $logo = $sidebar.find('.logo').first();
-            logo_content = $logo[0].outerHTML;
-
             ul_content = '';
 
             // set the bg color and active color from the default sidebar to the off canvas sidebar;
@@ -89,7 +86,7 @@ pd = {
 
             ul_content = '<ul class="nav navbar-nav">' + ul_content + '</ul>';
 
-            navbar_content = logo_content + ul_content;
+            navbar_content = ul_content;
             navbar_content = '<div class="sidebar-wrapper">' + navbar_content + '</div>';
 
             $off_canvas_sidebar.html(navbar_content);
